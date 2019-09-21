@@ -5,7 +5,7 @@ module.exports = {
     'babel-polyfill',
     'react-hot-loader/patch',
     'webpack-hot-middleware/client?reload=true',
-    './src/index.js'
+    './src/index.jsx'
   ],
   module: {
     rules: [
