@@ -5,7 +5,7 @@ const Musik = () => {
   return (
     <div>
       <h3>MusiK</h3>
-      <Song />
+      <Song title={'QOND'}/>
     </div>
   );
 };

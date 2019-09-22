@@ -15,7 +15,7 @@ npm install
 To run in hot module reloading mode:
 
 ```sh
-npm start
+npm run start-server
 ```
 
 To create a production build:

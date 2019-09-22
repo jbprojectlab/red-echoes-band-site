@@ -5,7 +5,7 @@ import Musik from '../components/musik';
 
 const App = () => (
   <Fragment>
-    <h2>SajMatiK</h2>
+    <h2>seiZmiK 7</h2>
     <Musik />
   </Fragment>
 );
