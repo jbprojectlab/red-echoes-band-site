@@ -1,13 +1,13 @@
 import React from 'react';
-import Song from './song'
+import Song from './song';
 
 const Musik = () => {
   return (
     <div>
       <h3>MusiK</h3>
-      <Song />      
+      <Song />
     </div>
- )
+  );
 };
 
 export default Musik;
