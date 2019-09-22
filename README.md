@@ -1,6 +1,6 @@
-# React Hot Module Replacement Boilerplate
+# seiZmiK 7
 
-Boilerplate for using Webpack's Hot Module Replacement with Node and React
+site to find seven Sound styles from one Mind
 
 ## Setup
 
