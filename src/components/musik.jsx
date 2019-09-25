@@ -1,11 +1,12 @@
 import React from 'react';
-import Song from './song';
+import Artist from './artist';
+import artists from '../constants/artists'
 
 const Musik = () => {
   return (
     <div>
       <h3>MusiK</h3>
-      <Song title={'QOND'}/>
+      {artists.map(({name, idx}) => <Artist key={name + idx} name={name} />)}
     </div>
   );
 };
