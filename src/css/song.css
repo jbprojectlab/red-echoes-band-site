@@ -1,0 +1,5 @@
+.play-btn {
+  background-color: lightgray;
+  flex-basis: 50%;
+  font-weight: bold;
+}
