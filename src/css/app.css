@@ -1,8 +1,6 @@
 body,
 html {
   font-family: 'Rubik', sans-serif;
-  background-color: black;
-  color: white;
   margin: 0;
   padding: 0;
 }
@@ -16,8 +14,20 @@ a:hover {
   text-decoration: underline;
 }
 
+.white {
+  color: white;
+}
+
+.bg-blk {
+  background-color: black;
+}
+
 .bg-gray {
   background-color: #b39b9a;
+}
+
+brdr-white {
+  border: 1px solid white;
 }
 
 .center-text {
@@ -54,6 +64,10 @@ w-100-per {
 
 .pdg-20 {
   padding: 20px;
+}
+
+.pdg-40 {
+  padding: 40px;
 }
 
 .flex {

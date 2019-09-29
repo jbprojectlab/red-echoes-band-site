@@ -9,10 +9,10 @@ const Song = ({title, src, length}) => {
     sound.play();
   };
   return (
-    <div className="song">
+    <div className="song bg-blk white">
       <h4>{title}</h4>
       <p>{length}</p>
-      <button className="play-btn" onClick={playSong}>
+      <button className="play-btn bg-gray white brdr-white" onClick={playSong}>
         PLAY
       </button>
     </div>

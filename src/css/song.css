@@ -1,12 +1,22 @@
 .song {
-  border: 1px solid grey;
+  border: 1px solid #b39b9a;
   padding: 40px;
   display: flex;
   justify-content: space-between;
 }
 
+.song:not(:last-of-type) {
+  border-bottom: none;
+}
+
 .play-btn {
-  background-color: lightgray;
   flex-basis: 50%;
   font-weight: bold;
+}
+
+.play-btn:hover {
+  background-color: white;
+  color: black;
+  transition-property: color, background-color;
+  transition: 3s, 3s;
 }

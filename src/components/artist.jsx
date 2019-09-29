@@ -5,8 +5,8 @@ import {getAlbumTitles} from '../constants/utilities';
 const Artist = ({name}) => {
   const albumTitles = getAlbumTitles(name);
   return (
-    <div className="top-margin">
-      <h4 className="fs-24">{name}</h4>
+    <div className="top-margin pdg-20">
+      <h3 className="fs-24">{name}</h3>
       <Albums artist={name} albumTitles={albumTitles} />
     </div>
   );
