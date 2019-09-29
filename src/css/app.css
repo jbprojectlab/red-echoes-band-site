@@ -5,6 +5,12 @@ html {
   padding: 0;
 }
 
+#main-container {
+  padding-bottom: 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -23,11 +29,20 @@ a:hover {
 }
 
 .bg-gray {
-  background-color: #b39b9a;
+  background: linear-gradient(
+    90deg,
+    #927877 -46.24%,
+    #b39b9a 58.97%,
+    #7b6463 149.07%
+  );
 }
 
-brdr-white {
+.brdr-white {
   border: 1px solid white;
+}
+
+.brdr-gray {
+  border: 1px solid #b39b9a;
 }
 
 .center-text {
@@ -36,6 +51,10 @@ brdr-white {
 
 .lighter {
   font-weight: lighter;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .fs-24 {
@@ -72,6 +91,10 @@ w-100-per {
 
 .flex {
   display: flex;
+}
+
+.align-ctr {
+  align-items: center;
 }
 
 .space-bw {

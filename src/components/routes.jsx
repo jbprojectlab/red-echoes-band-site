@@ -5,7 +5,7 @@ import Artist from './artist';
 
 const Routes = () => {
   return (
-    <div>
+    <div id="main-container">
       <Switch>
         {artists.map(({name}, idx) => (
           <Route

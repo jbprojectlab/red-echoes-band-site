@@ -1,22 +1,19 @@
-.song {
-  border: 1px solid #b39b9a;
-  padding: 40px;
-  display: flex;
-  justify-content: space-between;
-}
-
 .song:not(:last-of-type) {
   border-bottom: none;
 }
 
 .play-btn {
+  padding: 5px;
   flex-basis: 50%;
   font-weight: bold;
 }
 
 .play-btn:hover {
-  background-color: white;
-  color: black;
-  transition-property: color, background-color;
-  transition: 3s, 3s;
+  background: linear-gradient(
+    90deg,
+    #927877 -46.24%,
+    #fffdfd 58.97%,
+    #7b6463 149.07%
+  );
+  border: 1px solid #b39b9a;
 }
