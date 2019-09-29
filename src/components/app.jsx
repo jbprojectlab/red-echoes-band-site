@@ -1,12 +1,15 @@
 import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import '../css/app.css';
-import Musik from '../components/musik';
+import Header from '../components/header';
+import Navbar from './navbar';
+import Routes from '../components/routes';
 
 const App = () => (
   <Fragment>
-    <h2 className="center-text fs-32">seiZmiK 7</h2>
-    <Musik />
+    <Header />
+    <Navbar />
+    <Routes />
   </Fragment>
 );
 

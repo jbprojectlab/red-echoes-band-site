@@ -1,7 +1,6 @@
 import React from 'react';
 import Albums from './albums';
 import {getAlbumTitles} from '../constants/utilities';
-import '../css/artist.css';
 
 const Artist = ({name}) => {
   const albumTitles = getAlbumTitles(name);

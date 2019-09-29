@@ -1,10 +1,14 @@
 body,
 html {
   font-family: 'Rubik', sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-#app {
-  padding: 10px 20px 100px 20px;
+.bg-gray {
+  background-color: #b39b9a;
 }
 
 .center-text {
@@ -29,4 +33,12 @@ html {
 
 .top-margin:not(:first-of-type) {
   margin-top: 120px;
+}
+
+.mrg-0 {
+  margin: 0;
+}
+
+.pdg-20 {
+  padding: 20px;
 }
