@@ -1,19 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Howl, Howler} from 'howler';
 import '../css/song.css';
+Howler.autoUnlock = false;
 
 const Song = ({title, src, length}) => {
+  let sound = new Howl({src, html5: true, preload: true, paused: true});
   const playSong = () => {
-    Howler.unload();
-    const sound = new Howl({src});
-    sound.play();
-  };
+    sound = sound || new Howl({src, html5: true, preload: true, paused: true});
+    if(sound.playing()) {
+      sound.pause()
+    } else {
+      sound.play();
+    }
+  }
   return (
     <div className="song bg-blk white brdr-white flex align-ctr space-bw pdg-40">
-      <h4>{title}</h4>
-      <p>{length}</p>
-      <button className="play-btn bg-gray white brdr-white" onClick={playSong}>
-        <img src="/assets/img/play-circle-fill.png" />
+      <span>
+        <h4>{title}</h4>
+        <p className="lighter">{length}</p>
+      </span>
+      <button className={`play-btn bg-gray white brdr-white`} onClick={playSong}>
+        <img src={`/assets/img/play-circle-fill.png`} />
       </button>
     </div>
   );

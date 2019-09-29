@@ -7,7 +7,7 @@ const Album = ({artist, title}) => {
   const songs = getAlbum(artist, title);
   return (
     <div>
-      <h4 className="album-title fs-24 underline lighter brdr-gray mrg-0 pdg-40">
+      <h4 className="album-title fs-24 italic lighter brdr-gray mrg-0 pdg-40">
         {title}
       </h4>
       {songs.map(({title, src, length}, idx) => (
