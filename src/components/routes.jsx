@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router';
 import artists from '../constants/artists';
-import Artist from './artist'
+import Artist from './artist';
 
 const Routes = () => {
   return (
