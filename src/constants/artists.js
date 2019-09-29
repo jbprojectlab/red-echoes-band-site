@@ -1,11 +1,11 @@
 const artists = [
   {
     name: 'SajMatiK',
-    albums: ['saj_M'],
+    albumTitles: ['saj_M'],
   },
   {
     name: 'SMK',
-    albums: ['SMK'],
+    albumTitles: ['SMK'],
   },
 ];
 

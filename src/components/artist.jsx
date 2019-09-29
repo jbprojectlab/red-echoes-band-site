@@ -1,13 +1,14 @@
 import React from 'react';
 import Albums from './albums';
-import {getAlbums} from '../constants/utilities';
+import {getAlbumTitles} from '../constants/utilities';
+import '../css/artist.css'
 
 const Artist = ({name}) => {
-  const albums = getAlbums(name);
+  const albumTitles = getAlbumTitles(name);
   return (
-    <div>
-      <h4>{name}</h4>
-      <Albums artist={name} albums={albums} />
+    <div className='top-margin'>
+      <h4 className='fs-24'>{name}</h4>
+      <Albums artist={name} albumTitles={albumTitles} />
     </div>
   );
 };

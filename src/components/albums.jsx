@@ -1,11 +1,11 @@
 import React from 'react';
 import Album from './album';
 
-const Albums = ({artist, albums}) => {
+const Albums = ({artist, albumTitles}) => {
   return (
     <div>
-      {albums.map(album => (
-        <Album artist={artist} title={album} />
+      {albumTitles.map((title, idx) => (
+        <Album key={idx + Math.random()} artist={artist} title={title} />
       ))}
     </div>
   );
