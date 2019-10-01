@@ -1,32 +1,32 @@
 import React, {useRef} from 'react';
 import {Howl, Howler} from 'howler';
 import '../css/song.css';
-const stopCurrentlyPlayingSongs = () => {
+const stopCurrentlyPlayingSongs = (song) => {
   Howler._howls.forEach(howl => {
-    if(howl.playing()) howl.stop()
-  })
-}
+    if (howl.playing() && howl !== song) {
+      howl.stop();
+      // howl.unload()
+    }
+  });
+};
 
 const Song = ({title, src, length}) => {
   Howler.autoUnlock = false;
-  const options = {src, html5: true, preload: true, paused: true}
+  const options = {src, html5: true, preload: true, paused: true};
   const imgRef = useRef('pause');
   let sound = new Howl(options);
   const toggleSongState = () => {
-    stopCurrentlyPlayingSongs()
     sound = sound || new Howl(options);
+    stopCurrentlyPlayingSongs(sound);
     if (sound.playing()) {
       sound.pause();
     } else {
-      console.log(Howler)
       sound.play();
     }
   };
   const playSong = () => {
     toggleSongState();
-    imgRef.current.src = imgRef.current.src.includes(
-      `/assets/img/play-circle-fill.png`
-    )
+    imgRef.current.src = sound.playing()
       ? `/assets/img/pause-circle-fill.png`
       : `/assets/img/play-circle-fill.png`;
   };
