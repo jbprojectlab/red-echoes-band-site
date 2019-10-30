@@ -1,3 +1,4 @@
+import {Howler} from 'howler';
 import {
   getAlbum,
   getAlbumTitles,
@@ -21,3 +22,10 @@ test('get album titles from specific artist', () => {
   expect(getAlbumTitles('SMK')).toEqual(smkTitles);
   expect(getAlbumTitles('SajMatiK')).toEqual(sajmatikTitles);
 });
+
+// **test for app-level, then component-level rendering before testing click events
+// test('stop all currently playing songs', () => {
+//   Howler._howls.forEach(howl => {
+//     expect(howl.playing()).toBe(false)
+//   })
+// })

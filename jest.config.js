@@ -1,3 +1,6 @@
 module.exports = {
-  transformIgnorePatterns: ['/node_modules/'],
+  transform: {
+    '^.+\\.jsx?$': 'babel-jest',
+    '.+\\.(css|styl|less|sass|scss)$': 'jest-transform-css',
+  },
 };
