@@ -10,7 +10,9 @@ const compiler = webpack(webpackConfig);
 const app = express();
 const PORT = process.env.PORT || 7224;
 
-app.listen(PORT, () => console.log(`Server Listening on ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`Server Listening on http://localhost:${PORT}`)
+);
 
 app.use(
   require('webpack-hot-middleware')(compiler, {
