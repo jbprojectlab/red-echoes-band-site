@@ -2,13 +2,13 @@ import React from 'React';
 import {BrowserRouter as Router} from 'react-router-dom';
 import {render} from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import NavBar from '../components/navbar';
+import Navbar from '../components/navbar';
 
-describe('<NavBar />', () => {
+describe('<Navbar />', () => {
   test('Renders without crashing', () => {
     const {getByText} = render(
       <Router>
-        <NavBar />
+        <Navbar />
       </Router>
     );
     expect(getByText('SajMatiK')).toBeInTheDocument();
