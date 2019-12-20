@@ -1,7 +1,7 @@
 import React from 'react';
 import {Switch, Route} from 'react-router';
 import artists from '../constants/artists';
-import Home from './home'
+import Home from './home';
 import Artist from './artist';
 import NotFound from './not-found';
 
@@ -16,7 +16,7 @@ const Routes = () => {
             render={() => <Artist name={name} />}
           />
         ))}
-        <Route exact path='/' component={Home} />
+        <Route exact path="/" component={Home} />
         <Route component={NotFound} />
       </Switch>
     </div>

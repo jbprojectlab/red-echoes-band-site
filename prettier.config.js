@@ -1,5 +1,5 @@
 module.exports = {
-  bracketSpacing: false,
+  bracketSpacing: true,
   trailingComma: 'es5',
   tabWidth: 2,
   semi: true,

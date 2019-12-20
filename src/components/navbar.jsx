@@ -4,7 +4,7 @@ import artists from '../constants/artists';
 
 const Navbar = () => {
   return (
-    <div className="w-100-per flex space-bw pdg-20 bg-blk">
+    <div className="flex space-bw pdg-20 bg-blk">
       {artists.map(({name}, idx) => (
         <Link to={`/${name}`} key={idx + Math.random()}>
           {name}
