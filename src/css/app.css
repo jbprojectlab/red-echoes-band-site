@@ -9,12 +9,11 @@ html {
 
 #main-container {
   padding-bottom: 5%;
-  /* max-width: 1400px; */
   margin: 0 auto;
 }
 
 #header {
-  height: 80px;
+  height: 96px;
 }
 
 #header * {
@@ -110,6 +109,10 @@ a {
 
 .pdg-20 {
   padding: 20px;
+}
+
+.pdg-22 {
+  padding: 24px;
 }
 
 .pdg-40 {

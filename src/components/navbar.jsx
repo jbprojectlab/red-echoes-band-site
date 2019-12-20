@@ -5,13 +5,10 @@ import artists from '../constants/artists';
 const Navbar = () => {
   return (
     <div id="navbar" className="bg-blk">
-      <ul className="flex flex-grow space-bw mrg-0 pdg-20">
+      <ul className="flex flex-grow space-bw mrg-0 pdg-22">
         {artists.map(({ name }, idx) => (
-          <li className="flex h-100-pct center-items">
-            <Link
-              className="nav-link grow"
-              to={`/${name}`}
-              key={idx + Math.random()}>
+          <li className="flex h-100-pct center-items" key={idx + Math.random()}>
+            <Link to={`/${name}`} className="nav-link grow">
               {name}
             </Link>
           </li>

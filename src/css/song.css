@@ -1,5 +1,7 @@
-.song:not(:last-of-type) {
+.song {
+  border-right: none;
   border-bottom: none;
+  border-left: none;
 }
 
 .play-btn {
