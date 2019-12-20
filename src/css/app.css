@@ -26,7 +26,7 @@ a {
 }
 
 .nav-link:hover {
-  color: rgba(179, 155, 154, 1);
+  color: rgb(179, 155, 154);
   text-shadow: 0.25px 0.25px 0.25px white;
 }
 
