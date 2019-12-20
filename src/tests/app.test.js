@@ -13,7 +13,9 @@ describe('<App />', () => {
         <App />
       </Router>
     );
-    expect(getAllByRole('heading')[0]).toHaveTextContent('seiZmiK 7');
+    expect(getAllByRole('banner')[0]).toHaveTextContent(
+      'Seven soundZ, Seven styleZ'
+    );
     fireEvent.click(getByText(/SMK/));
     expect(getAllByRole('banner')[0]).toHaveTextContent('SMK');
   });
