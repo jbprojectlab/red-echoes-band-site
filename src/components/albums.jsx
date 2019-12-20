@@ -1,7 +1,7 @@
 import React from 'react';
 import Album from './album';
 
-const Albums = ({artist, albumTitles}) => {
+const Albums = ({ artist, albumTitles }) => {
   return (
     <div>
       {albumTitles.map((title, idx) => (

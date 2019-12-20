@@ -1,8 +1,8 @@
 import React from 'react';
 import Albums from './albums';
-import {getAlbumTitles} from '../constants/utilities';
+import { getAlbumTitles } from '../constants/utilities';
 
-const Artist = ({name}) => {
+const Artist = ({ name }) => {
   const albumTitles = getAlbumTitles(name);
   return (
     <div className="top-margin pdg-20">

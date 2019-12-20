@@ -1,4 +1,4 @@
-import {Howler} from 'howler';
+import { Howler } from 'howler';
 import {
   getAlbum,
   getAlbumTitles,
@@ -7,8 +7,8 @@ import {
 
 import songs from '../constants/songs';
 
-const SMK = songs.filter(({album}) => album === 'SMK');
-const saj_M = songs.filter(({album}) => album === 'saj_M');
+const SMK = songs.filter(({ album }) => album === 'SMK');
+const saj_M = songs.filter(({ album }) => album === 'saj_M');
 
 const smkTitles = ['SMK'];
 const sajmatikTitles = ['saj_M'];

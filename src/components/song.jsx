@@ -1,9 +1,9 @@
-import React, {useRef} from 'react';
-import {Howl, Howler} from 'howler';
+import React, { useRef } from 'react';
+import { Howl, Howler } from 'howler';
 import '../css/song.css';
-import {stopCurrentlyPlayingSongs} from '../constants/utilities';
+import { stopCurrentlyPlayingSongs } from '../constants/utilities';
 
-const Song = ({title, src, length}) => {
+const Song = ({ title, src, length }) => {
   Howler.autoUnlock = false;
   const options = {
     src,
