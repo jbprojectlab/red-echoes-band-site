@@ -1,7 +1,7 @@
 import React from 'react';
 import Song from './song';
 import { getAlbum } from '../constants/utilities';
-import '../css/album.css';
+import '../styles/album.css';
 
 const Album = ({ artist, title }) => {
   const songs = getAlbum(artist, title);

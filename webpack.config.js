@@ -19,6 +19,17 @@ module.exports = {
         exclude: /node_modules/,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.css$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'postcss-loader',
+          options: {
+            plugins: ctx => require('precss')(ctx.plugin),
+            sourceMap: false,
+          },
+        },
+      },
     ],
   },
   resolve: {

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
-import '../css/app.css';
+import '../styles/app.css';
 import Header from '../components/header';
 import Navbar from './navbar';
 import Routes from '../components/routes';
