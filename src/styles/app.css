@@ -15,7 +15,7 @@ html {
 
 #header {
   height: 96px;
-  * {
+  & * {
     width: 100%;
   }
 }
@@ -32,10 +32,9 @@ a {
 
 .grow {
   transition: all 0.2s ease-in-out;
-}
-
-.grow:hover {
-  transform: scale(1.1);
+  & :hover {
+    transform: scale(1.1);
+  }
 }
 
 .white {
