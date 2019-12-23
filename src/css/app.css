@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: 'Rubik', sans-serif;
+  color: #292423;
 }
 
 #main-container {
@@ -43,7 +44,7 @@ a {
 }
 
 .bg-blk {
-  background-color: black;
+  background-color: #292423;
 }
 
 .bg-gray {
