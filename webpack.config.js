@@ -25,8 +25,9 @@ module.exports = {
         use: {
           loader: 'postcss-loader',
           options: {
-            plugins: ctx => require('precss')(ctx.plugin),
-            sourceMap: false,
+            config: {
+              path: './postcss.config.js',
+            },
           },
         },
       },

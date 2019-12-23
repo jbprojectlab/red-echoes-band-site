@@ -42,7 +42,7 @@ a {
 }
 
 .bg-blk {
-  background-color: #292423;
+  background-color: getColor(black);
 }
 
 .bg-gray {
@@ -59,7 +59,7 @@ a {
 }
 
 .brdr-gray {
-  border: 1px solid #b39b9a;
+  border: 1px solid getColor(gray);
 }
 
 .center-text {
