@@ -2,20 +2,32 @@
   border-right: none;
   border-bottom: none;
   border-left: none;
-}
-
-.play-btn {
-  padding: 5px;
   flex-basis: 50%;
-  font-weight: bold;
 }
 
-.play-btn:hover {
-  background: linear-gradient(
-    90deg,
-    #927877 -46.24%,
-    #fffdfd 58.97%,
-    #7b6463 149.07%
-  );
-  border: 1px solid #b39b9a;
+.song .player {
+  width: 75%;
+  height: 96px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #aaa1a1;
+  cursor: pointer;
+}
+
+.song .player .player-btn {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+}
+
+/* .player-btn:hover {
+  border: 1px solid #aaa1a1;
+  border-radius: 30px;
+  box-sizing: border-box;
+} */
+
+.disabled-player-btn {
+  pointer-events: none;
+  opacity: 0.7;
 }

@@ -8,11 +8,11 @@ const getArtistSongs = artist => songs.filter(song => song.artist === artist);
 export const getAlbum = (artist, title) =>
   getArtistSongs(artist).filter(song => song.album === title);
 
-export const getAlbumTitles = artist => getArtist(artist).albumTitles;
+export const getArtistAlbums = artist => getArtist(artist).artistAlbums;
 
-export const stopCurrentlyPlayingSongs = song => {
+export const stopAllSongs = song => {
   Howler._howls.forEach(howl => {
-    if (howl.playing() && howl !== song) {
+    if (howl !== song) {
       howl.stop();
     }
   });

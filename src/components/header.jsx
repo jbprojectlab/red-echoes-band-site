@@ -1,14 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Header = () => {
-  return (
-    <div id="header" className="flex center-items center-text bg-gray">
-      <Link to="/">
-        <h2 className="h-100-pct white fs-32 mrg-0 grow">seiZmiK 7</h2>
-      </Link>
-    </div>
-  );
-};
+const Header = () => (
+  <div id="header" className="flex center-items center-text bg-gray">
+    <Link to="/">
+      <img src="/assets/img/seizmik7-main-logo-prpl.png" />
+    </Link>
+  </div>
+);
 
 export default Header;

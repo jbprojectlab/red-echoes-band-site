@@ -11,18 +11,31 @@ html {
 #main-container {
   padding-bottom: 5%;
   margin: 0 auto;
+  padding: 60px 40px;
 }
 
 #header {
-  height: 96px;
-  & * {
-    width: 100%;
-  }
+  height: 124px;
+}
+
+#header a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header img {
+  width: 200px;
 }
 
 a {
   color: white;
   text-decoration: none;
+}
+
+.nav-link {
+  font-size: 20px;
 }
 
 .nav-link:hover {
@@ -56,7 +69,7 @@ a {
 }
 
 .brdr-white {
-  border: 1px solid white;
+  border: 1px solid #fff;
 }
 
 .brdr-gray {
@@ -111,7 +124,7 @@ a {
   padding: 20px;
 }
 
-.pdg-22 {
+.pdg-24 {
   padding: 24px;
 }
 
@@ -127,10 +140,25 @@ a {
   flex-grow: 1;
 }
 
+.column-flex {
+  flex-direction: column;
+}
+
 .space-bw {
   justify-content: space-between;
 }
 
 .center-items {
   align-items: center;
+}
+
+.video-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 32px 0;
+}
+
+button {
+  all: unset;
 }

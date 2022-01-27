@@ -1,0 +1,20 @@
+.album-link {
+  display: flex;
+  margin: 24px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.album-link-info p:nth-child(1) {
+  font-size: 20px;
+}
+
+.album-link-info p:nth-child(2) {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.album-link img {
+  height: 200px;
+  width: 200px;
+}

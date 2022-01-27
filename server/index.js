@@ -8,7 +8,7 @@ const webpackConfig = require('../webpack.config');
 const compiler = webpack(webpackConfig);
 
 const app = express();
-const PORT = process.env.PORT || 7224;
+const PORT = process.env.PORT || 6004;
 
 app.listen(PORT, () =>
   console.log(`Server Listening on http://localhost:${PORT}`)

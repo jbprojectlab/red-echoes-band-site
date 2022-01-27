@@ -1,26 +1,14 @@
 import React from 'react';
-import Song from './song';
+import Player from './player';
 import { getAlbum } from '../constants/utilities';
-import '../styles/album.css';
 
-const Album = ({ artist, title }) => {
-  const songs = getAlbum(artist, title);
+const Album = props => {
+  const { artist, albumTitle } = props.match.params;
+  const songs = getAlbum(artist, albumTitle);
+
   return (
     <div className="brdr-gray">
-      <h4
-        data-testid="album-title"
-        className="album-title fs-24 italic lighter mrg-0 pdg-40"
-      >
-        {title}
-      </h4>
-      {songs.map(({ title, src, length }, idx) => (
-        <Song
-          key={idx + Math.random()}
-          title={title}
-          src={src}
-          length={length}
-        />
-      ))}
+      <Player artist={artist} title={albumTitle} songs={songs} />
     </div>
   );
 };

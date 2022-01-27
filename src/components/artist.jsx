@@ -1,15 +1,15 @@
 import React from 'react';
 import Albums from './albums';
-import { getAlbumTitles } from '../constants/utilities';
+import { getArtistAlbums } from '../constants/utilities';
 
 const Artist = ({ name }) => {
-  const albumTitles = getAlbumTitles(name);
+  const artistAlbums = getArtistAlbums(name);
   return (
-    <div className="top-margin pdg-20">
-      <h3 className="fs-32 lighter" role="banner">
+    <div className="brdr-gray">
+      <h3 className="pdg-24 fs-32 lighter" role="banner">
         {name}
       </h3>
-      <Albums artist={name} albumTitles={albumTitles} />
+      <Albums artist={name} artistAlbums={artistAlbums} />
     </div>
   );
 };
