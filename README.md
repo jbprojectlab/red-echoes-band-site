@@ -1,6 +1,6 @@
-# seiZmiK 7
+# Red Echoes Band Website (redechoesband.com)
 
-site to find seven Sound styles from one Mind
+Website for Red Echoes, band out of Daytona Beach, FL
 
 ## Setup
 

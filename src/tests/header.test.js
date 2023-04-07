@@ -11,6 +11,6 @@ describe('<Header />', () => {
         <Header />
       </Router>
     );
-    expect(getByText('seiZmiK 7')).toBeInTheDocument();
+    expect(getByText('Red Echoes')).toBeInTheDocument();
   });
 });

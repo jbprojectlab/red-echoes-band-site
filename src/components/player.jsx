@@ -6,7 +6,7 @@ import '../styles/player.css';
 const pauseButton = '/assets/img/pause-circle-fill.svg';
 const playButton = '/assets/img/play-circle-fill.svg';
 
-const Player = ({ artist, title, songs }) => {
+const Player = ({ title, songs }) => {
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
 
